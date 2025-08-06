@@ -1,0 +1,20 @@
+{
+  "name": "micro-frontend-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter main-qiankun dev & pnpm --filter app-vue2 dev",
+    "build": "pnpm --filter main-qiankun build && pnpm --filter app-vue3 build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "undici": "^5.28.4"
+  },
+  "volta": {
+    "node": "20.19.4"
+  }
+}
